@@ -561,6 +561,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
+  display: block;
 }
 .model-input {
   width: 100%;
@@ -568,14 +569,18 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  padding-left: 40px;
+  padding-left: 38px;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-input:focus {
   border-color: #4d5ae5;
 }
 .model-input:focus + .model-icon {
   fill: #4d5ae5;
+}
+.model-textarea-wrap{
+  margin-bottom: 16px;
 }
 .model-textarea {
   width: 100%;
@@ -625,6 +630,7 @@ img {
   background-color: #404bbf;
 }
 .check-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-checkbox {
 }
