@@ -364,13 +364,24 @@
           </li>
         </ul>
       </div>
+      <div class="">
+        <p class="footer-text-input">Subscribe</p>
+        <div class="footer-input-wrap">
+          <input type="email" class="footer-input" placeholder="email">
+          <button type="submit" class="footer-submit-btn">Subscribe
+            <svg class="footer-submit-icon" width="24" height="24">
+              <use href="./images/icons.svg#iconFrame-3"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- ------------------------footer------------------------ -->
   <!------------------ backdrop ---------------------------->
   <div class="backdrop ">
     <div class="model">
-      <button type="submit" class="model-close-btn">
+      <button type="button" class="model-close-btn">
         <svg class="model-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
@@ -410,10 +421,17 @@
         <label class="model-label">Comment
           <textarea class="model-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
         </label>
-        <label class="model-label">
-          <input class="model-checkbox" type="checkbox" name="" id="">
-          I accept the terms and conditions of the <span class="">Privacy Policy</span>
-        </label>
+        <div class="model-checkbox-wrap">
+          <label class="model-label-checkbox">
+            <div class="model-checkbox-icon">
+              <input class="model-checkbox visually-hidden" type="checkbox" name="Policy" id="Policy">
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#iconVector"></use>
+              </svg>
+            </div>
+            I accept the terms and conditions of the <a class="model-checkbox-link" href="">Privacy Policy</a>
+          </label>
+        </div>
         <button class="model-btn" type="submit">Send</button>
       </form>
     </div>
