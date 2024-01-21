@@ -422,12 +422,15 @@
           <textarea class="model-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
         </div>
         <div class="model-checkbox-wrap">
-          <input class="model-checkbox " value="true" type="checkbox" name="Policy" id="Policy">
-          <svg class="check-icon" width="10" height="8">
-            <use href="./images/icons.svg#iconVector"></use>
-          </svg>
-          <label for="Policy" class="model-label-checkbox"> <span class="model-checkbox-icon"></span>I accept the terms
+          <input class="model-checkbox visually-hidden" value="true" id="user-privacy" type="checkbox"
+            name="user-privacy">
+          <label for="user-privacy" class="model-label-checkbox"> <span class="model-checkbox-icon"><svg
+                class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#iconVector"></use>
+              </svg></span>I accept the
+            terms
             and conditions of the<a class="model-checkbox-link" href="">Privacy Policy</a></label>
+
         </div>
         <button class="model-btn" type="submit">Send</button>
       </form>
